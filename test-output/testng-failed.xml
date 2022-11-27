@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <parameter name="password" value="secret_sauce"/>
+  <parameter name="url" value="https://www.saucedemo.com/"/>
+  <parameter name="username" value="standard_user"/>
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="com.end2end.swaglab">
+        <methods>
+          <include name="products"/>
+        </methods>
+      </class> <!-- com.end2end.swaglab -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
